@@ -16,8 +16,17 @@ body {
   width: 1440px;
   margin: 0 auto;
 }
-body .app {
+body #app {
   width: 100%;
+}
+body #app h2 {
+  color: hsl(229, 31%, 21%);
+  font-size: 30px;
+  letter-spacing: 1px;
+  line-height: 26px;
+}
+body #app button:hover {
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=style.css.map */
