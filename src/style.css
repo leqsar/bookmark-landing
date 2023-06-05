@@ -39,6 +39,7 @@ body #app h3 {
 }
 body #app button {
   border-radius: 5px;
+  font-weight: 600;
   cursor: pointer;
 }
 body #app .blue-box {

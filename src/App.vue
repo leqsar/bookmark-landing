@@ -4,6 +4,7 @@ import MainBlock from './components/MainBlock.vue'
 import Features from './components/Features.vue'
 import Extensions from './components/Extensions.vue'
 import Faq from './components/Faq.vue'
+import Form from './components/Form.vue'
 </script>
 
 <template>
@@ -12,6 +13,7 @@ import Faq from './components/Faq.vue'
   <Features />
   <Extensions />
   <Faq />
+  <Form />
 </template>
 
 <style scoped>
