@@ -46,7 +46,7 @@ import img3 from '../assets/images/illustration-features-tab-3.svg'
         .feature-main-info
             display: flex
             flex-direction: column
-            width: 430px
+            width: 440px
             margin-top: 130px
             margin-left: 125px
 
@@ -71,7 +71,7 @@ import img3 from '../assets/images/illustration-features-tab-3.svg'
         .blue-box
             position: absolute
             left: 0
-            top: 200px
+            top: 150px
             width: 500px
             height: 350px
             border-top-right-radius: 175px
