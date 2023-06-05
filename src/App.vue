@@ -5,6 +5,7 @@ import Features from './components/Features.vue'
 import Extensions from './components/Extensions.vue'
 import Faq from './components/Faq.vue'
 import Form from './components/Form.vue'
+import Footer from './components/Footer.vue'
 </script>
 
 <template>
@@ -14,6 +15,7 @@ import Form from './components/Form.vue'
   <Extensions />
   <Faq />
   <Form />
+  <Footer />
 </template>
 
 <style scoped>
