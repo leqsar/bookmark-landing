@@ -51,7 +51,6 @@
       background-color: $softRed
       color: white
       letter-spacing: 1px
-      border-radius: 5px
       font-weight: 500
 
       &:hover

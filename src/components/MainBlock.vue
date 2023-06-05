@@ -201,10 +201,10 @@
 
 .main-block
   position: relative
+  display: flex
   width: 100%
   padding-left: $bodyMarginLeft
   box-sizing: border-box
-  display: flex
 
   .main-info-wrapper
       display: flex
@@ -213,30 +213,22 @@
 
       .main-info-heading
           margin-top: 145px
-          font-size: $h1FontSize
-          color: $veryDarkBlue
-          letter-spacing: 1px
-          font-weight: 500
-          line-height: 40px
-
+          
       p
+          @include pFontRule
           margin-top: $contentVerticalMargin
-          font-size: $mainFontSize
-          color: $grayishBlue
           width: 100%
 
       .buttons-wrapper
           margin-top: $contentVerticalMargin
 
           button
+              @include buttonFontRule
               width: $mediumBttnWidth
               height: $bttnHeight
               color: $grayishBlue
-              font-size: $bttnFotnSize
-              font-weight: 600
               border: 2px solid $grayishBlue
               background-color: white
-              border-radius: 5px
 
               &:hover
                   cursor: pointer
@@ -257,13 +249,9 @@
       background: linear-gradient(145deg, rgba(60,60,60,1) 0%, rgba(0,0,0,1) 60%)
 
   .blue-box
-      position: absolute
       right: 0
       top: 200px
-      width: 500px
-      height: 350px
       border-top-left-radius: 175px
       border-bottom-left-radius: 175px
-      background-color: $softBlue
-      z-index: -1
+
 </style>

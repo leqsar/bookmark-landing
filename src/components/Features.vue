@@ -92,12 +92,11 @@
             p, h2 
                 text-align: center
             
-            p
+            p   
+                @include pFontRule
                 margin: 0 auto
                 margin-top: $contentVerticalMargin
-                font-size: $mainFontSize
                 width: 532px
-                color: $grayishBlue
                 line-height: 20px
         
         .features-nav 

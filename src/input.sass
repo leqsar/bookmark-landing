@@ -21,9 +21,24 @@ $errorFontSize: 7px
 $normalWeight: 400
 $bolderWeight: 500
 
+//font rules
+@mixin buttonFontRule
+    font: 
+        size: $bttnFotnSize
+        weight: 600
+
+@mixin pFontRule
+    font-size: $mainFontSize
+    color: $grayishBlue
+    letter-spacing: 1px
+
 //margins
 $contentVerticalMargin: 40px
 $bodyMarginLeft: 168px
+
+@mixin defaultSectionMargins
+    margin: 0 auto
+    margin-top: 165px
 
 
 //element sizes
@@ -58,11 +73,34 @@ body
     #app 
         width: 100%
 
+        h1
+            color: $veryDarkBlue
+            letter-spacing: 1px 
+            line-height: 40px
+            font:
+                size: $h1FontSize
+                weight: 500
+
         h2
             color: $veryDarkBlue
             font-size: $subHeadingFontSize
             letter-spacing: 1px
             line-height: 26px
 
-        button:hover 
+        h3
+            font-size: $smallSubhFontSize
+            color: $veryDarkBlue
+            letter-spacing: 1px
+
+        button 
+            border-radius: 5px
+
+            &:hover 
             cursor: pointer
+
+        .blue-box
+            position: absolute
+            width: 500px
+            height: 350px
+            background-color: $softBlue
+            z-index: -1

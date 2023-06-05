@@ -54,18 +54,16 @@ import img3 from '../assets/images/logo-opera.svg'
     @import "../input.sass"
 
     .extensions-wrapper
+        @include defaultSectionMargins
         width: 915px
-        margin: 0 auto
-        margin-top: 165px
         text-align: center
 
         .extensions-main-info
             p  
+                @include pFontRule
                 margin: 0 auto 
                 width: 530px
                 margin-top: $contentVerticalMargin
-                color: $grayishBlue
-                letter-spacing: 1px
 
         .extensions
             margin-top: 60px
@@ -86,19 +84,13 @@ import img3 from '../assets/images/logo-opera.svg'
                     position: absolute
                     top: 270px
                     left: 0
-                    height: 4px
                     width: 100%
+                    height: 4px
                     background-image: url(../assets/images/bg-dots.svg)
 
-                img
+                img, h3
                     margin-top: 35px
                 
-                h3
-                    font-size: $smallSubhFontSize
-                    color: $veryDarkBlue
-                    letter-spacing: 1px
-                    margin-top: 35px
-
                 p
                     margin-top: 20px
                     color: $grayishBlue
@@ -109,7 +101,6 @@ import img3 from '../assets/images/logo-opera.svg'
                     height: $bttnHeight
                     background-color: $softBlue
                     color: white
-                    border-radius: 5px
                     font-weight: 600
 
                     &:hover

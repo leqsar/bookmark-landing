@@ -52,7 +52,6 @@ import img3 from '../assets/images/illustration-features-tab-3.svg'
 
             .feature-heading
                 text-align: left
-                letter-spacing: 1px
 
             .feature-content
                 color: $grayishBlue
@@ -66,18 +65,12 @@ import img3 from '../assets/images/illustration-features-tab-3.svg'
                 height: $bttnHeight
                 background-color: $softBlue
                 color: white
-                border-radius: 5px
     
         .blue-box
-            position: absolute
             left: 0
             top: 150px
-            width: 500px
-            height: 350px
             border-top-right-radius: 175px
             border-bottom-right-radius: 175px
-            background-color: $softBlue
-            z-index: -1
 
         .feature-img 
             margin-top: 75px
