@@ -21,6 +21,7 @@
         xmlns:xlink="http://www.w3.org/1999/xlink"
         width="536"
         height="346"
+        viewBox="-5 15 545 320"
       >
         <defs><rect id="a" width="536" height="346" rx="8" /></defs>
         <g fill="none" fill-rule="evenodd">
@@ -206,13 +207,25 @@
   padding-left: $bodyMarginLeft
   box-sizing: border-box
 
+  @media screen and (max-width: $mobileWidth)
+    flex-direction: column-reverse
+    padding-left: 0
+
   .main-info-wrapper
       display: flex
       flex-direction: column
       width: 470px
 
+      @media screen and (max-width: $mobileWidth)
+        width: 92%
+        margin: 0 auto
+        text-align: center
+
       .main-info-heading
           margin-top: 145px
+
+          @media screen and (max-width: $mobileWidth)
+            margin-top: 90px
           
       p
           @include pFontRule
@@ -229,6 +242,9 @@
               color: $grayishBlue
               border: 2px solid $grayishBlue
               background-color: white
+
+              @media screen and (max-width: $mobileWidth)
+                width: calc($mediumBttnWidth - 0.1*$mediumBttnWidth)
 
               &:hover
                   cursor: pointer
@@ -247,11 +263,33 @@
       box-sizing: border-box
       border-radius: 20px
       background: linear-gradient(145deg, rgba(60,60,60,1) 0%, rgba(0,0,0,1) 60%)
+      position: relative
+
+      @media screen and (max-width: $mobileWidth)
+        width: 295px
+        height: 202px
+        padding: 10px
+        border-radius: 10px
+        margin: 0 auto
+        margin-top: 10px
+
+      svg
+        @media screen and (max-width: $mobileWidth)
+          position: relative
+          top: -4px
+          width: 275px
+          height: 192px
+        
 
   .blue-box
       right: 0
       top: 200px
       border-top-left-radius: 175px
       border-bottom-left-radius: 175px
+
+      @media screen and (max-width: $mobileWidth)
+        border-top-left-radius: 140px
+        border-bottom-left-radius: 140px
+        top: 60px
 
 </style>

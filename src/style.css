@@ -16,6 +16,11 @@ body {
   width: 1440px;
   margin: 0 auto;
 }
+@media screen and (max-width: 400px) {
+  body {
+    width: 100%;
+  }
+}
 body #app {
   width: 100%;
 }
@@ -26,11 +31,21 @@ body #app h1 {
   font-size: 40px;
   font-weight: 500;
 }
+@media screen and (max-width: 400px) {
+  body #app h1 {
+    font-size: 30px;
+  }
+}
 body #app h2 {
   color: hsl(229, 31%, 21%);
   font-size: 30px;
   letter-spacing: 1px;
   line-height: 26px;
+}
+@media screen and (max-width: 400px) {
+  body #app h2 {
+    font-size: 20px;
+  }
 }
 body #app h3 {
   font-size: 20px;
@@ -48,6 +63,12 @@ body #app .blue-box {
   height: 350px;
   background-color: hsl(231, 69%, 60%);
   z-index: -1;
+}
+@media screen and (max-width: 400px) {
+  body #app .blue-box {
+    width: 280px;
+    height: 180px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

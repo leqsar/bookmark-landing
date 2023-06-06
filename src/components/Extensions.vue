@@ -58,12 +58,20 @@ import img3 from '../assets/images/logo-opera.svg'
         width: 915px
         text-align: center
 
+        @media screen and (max-width: $mobileWidth)
+            width: 100%
+            margin-top: 90px
+
         .extensions-main-info
             p  
                 @include pFontRule
                 margin: 0 auto 
                 width: 530px
                 margin-top: $contentVerticalMargin
+
+                @media screen and (max-width: $mobileWidth)
+                    width: 92%
+                    margin-top: $contentVerticalMargin/2
 
         .extensions
             margin-top: 60px
@@ -72,12 +80,21 @@ import img3 from '../assets/images/logo-opera.svg'
             grid-template-areas: 'a . .' 'a b .' 'a b c' 'a b c' 'a b c' 'a b c' '. b c' '. . c'
             column-gap: 30px
 
+            @media screen and (max-width: $mobileWidth)
+                grid-template-areas: 'a' 'b' 'c'
+                gap: $contentVerticalMargin
+
 
             li  
                 position: relative
                 height: 360px
                 box-shadow: 2px 2px 20px -10px $grayishBlue
                 border-radius: 10px
+
+                @media screen and (max-width: $mobileWidth)
+                    margin: 0 auto
+                    width: 82%
+                    
 
                 &:before
                     content: ''

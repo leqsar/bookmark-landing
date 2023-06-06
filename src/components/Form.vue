@@ -49,19 +49,38 @@ export default {
     padding-top: 70px
     box-sizing: border-box
 
-    p, h2
-        color: white !important
+    @media screen and (max-width: $mobileWidth)
+        margin-top: 90px
 
     p
         text-transform: uppercase
-        letter-spacing: 2px
+        letter-spacing: 3px
+        font-weight: 500
+
+        @media screen and (max-width: $mobileWidth)
+            font-size: 12px          
 
     h2
         width: 410px
         margin-top: 50px
+        
+        @media screen and (max-width: $mobileWidth)
+            margin-top: $contentVerticalMargin/2
+
+    p, h2
+        color: white !important
+       
+        @media screen and (max-width: $mobileWidth)
+           width: 90%
 
     form
         margin-top: $contentVerticalMargin
+
+        @media screen and (max-width: $mobileWidth)
+            width: 90%
+            display: flex
+            flex-direction: column
+            gap:  $contentVerticalMargin
 
         input
             position: relative
@@ -72,6 +91,9 @@ export default {
             font-size: 16px
             border-radius: 5px
             border: 0
+
+            @media screen and (max-width: $mobileWidth)
+                width: 100%
 
             &:focus
                 outline: 0
@@ -89,6 +111,10 @@ export default {
             margin-left: 20px
             background-color: $softRed
             color: white
+
+            @media screen and (max-width: $mobileWidth)
+                width: 100%
+                margin-left: 0 
 
             &:hover
                 background-color: white
@@ -111,4 +137,10 @@ export default {
         font-size: 10px
         box-sizing: border-box
         text-align: left
+
+        @media screen and (max-width: $mobileWidth)
+            left: 5%
+            top: 240px
+            width: 338px
+
 </style>

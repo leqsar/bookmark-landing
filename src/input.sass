@@ -1,5 +1,5 @@
 // body width
-$mobileWidth: 375px
+$mobileWidth: 400px
 $desktopWidth: 1440px
 
 //colors
@@ -7,6 +7,7 @@ $softBlue: hsl(231, 69%, 60%)
 $softRed: hsl(0, 94%, 66%)
 $grayishBlue: hsl(229, 8%, 60%)
 $veryDarkBlue: hsl(229, 31%, 21%)
+$linesGray: #e6e8ed
 
 //font sizes
 $h1FontSize: 40px
@@ -70,6 +71,9 @@ body
     width: 1440px
     margin: 0 auto
 
+    @media screen and (max-width: $mobileWidth)
+        width: 100%
+
     #app 
         width: 100%
 
@@ -81,11 +85,18 @@ body
                 size: $h1FontSize
                 weight: 500
 
+            @media screen and (max-width: $mobileWidth)
+                font-size: $subHeadingFontSize
+
         h2
             color: $veryDarkBlue
             font-size: $subHeadingFontSize
             letter-spacing: 1px
             line-height: 26px
+
+            @media screen and (max-width: $mobileWidth)
+                font-size: $smallSubhFontSize
+
 
         h3
             font-size: $smallSubhFontSize
@@ -105,3 +116,7 @@ body
             height: 350px
             background-color: $softBlue
             z-index: -1
+
+            @media screen and (max-width: $mobileWidth)
+                width: 280px
+                height: 180px

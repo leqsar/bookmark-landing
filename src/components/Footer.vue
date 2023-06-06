@@ -65,6 +65,18 @@ footer
     box-sizing: border-box
     background-color: $veryDarkBlue
 
+    @media screen and (max-width: $mobileWidth)
+      position: relative
+      width: 100%
+      height: 270px
+      padding: 0
+      flex-direction: column
+
+    svg
+      @media screen and (max-width: $mobileWidth)
+            margin: 0 auto
+            margin-top: $contentVerticalMargin/2
+
     .logo-text
         fill: white
 
@@ -72,15 +84,29 @@ footer
         margin-left: 65px
         width: 295px
 
+        @media screen and (max-width: $mobileWidth)
+            margin-left: 0
+            margin: 0 auto
+            margin-top: $contentVerticalMargin
+
         ul
             width: 100%
             display: flex
             justify-content: space-between
+            gap: ($contentVerticalMargin/2)*1.5
+
+            @media screen and (max-width: $mobileWidth)
+              flex-direction: column
 
             li
                 text-transform: uppercase
-                color: white
+                color: $grayishBlue
                 letter-spacing: 1px
+
+                @media screen and (max-width: $mobileWidth)
+                  text-align: center
+                  font-size: 14px
+                  font-weight: 500
 
                 &:hover
                     cursor: pointer
@@ -89,6 +115,12 @@ footer
     .facebook
         margin-left: 520px
 
+        @media screen and (max-width: $mobileWidth)
+            margin-left: 0
+            top: 210px
+            left: 40%
+            position: absolute
+
         &:hover
             cursor: pointer
             path
@@ -96,6 +128,12 @@ footer
 
     .twitter
         margin-left: 40px
+
+        @media screen and (max-width: $mobileWidth)
+            margin-left: 0
+            top: 213px
+            left: 55%
+            position: absolute
 
         &:hover
             cursor: pointer

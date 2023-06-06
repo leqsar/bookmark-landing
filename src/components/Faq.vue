@@ -32,9 +32,17 @@ import Question from "./Question.vue";
     .faq-wrapper
         @include defaultSectionMargins
         width: 536px
+
+        @media screen and (max-width: $mobileWidth)
+          width: 100%
+          margin-top: 90px
         
         .faq-main-info
             text-align: center
+
+            @media screen and (max-width: $mobileWidth)
+              margin: 0 auto
+              width: 90%
 
             p
                 @include pFontRule
@@ -46,6 +54,11 @@ import Question from "./Question.vue";
             width: 100%
             margin-top: 60px
 
+            @media screen and (max-width: $mobileWidth)
+              margin: 0 auto
+              margin-top: $contentVerticalMargin
+              width: 90%
+
         button 
             width: $smallBttnWidth
             height: $bttnHeight
@@ -54,5 +67,9 @@ import Question from "./Question.vue";
             background-color: $softBlue
             color: white
             font-weight: 500
+
+            @media screen and (max-width: $mobileWidth)
+              margin-left: calc(50% - $smallBttnWidth/2)
+              margin-top: $contentVerticalMargin/2
 
 </style>

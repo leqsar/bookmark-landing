@@ -48,13 +48,16 @@
             letter-spacing: 0.5px
             user-select: none
 
+            @media screen and (max-width: $mobileWidth)
+                font-size: 16px
+
             &:after
                 content: ''
                 position: absolute
                 display: v-bind(lineDisplay)
                 top: 60px
                 width: 100%
-                border-top: 1px solid $grayishBlue
+                border-top: 3px solid $linesGray
 
             &:hover
                 cursor: pointer
@@ -64,6 +67,10 @@
             color: $grayishBlue
             font-size: 17px
             line-height: 30px
+
+            @media screen and (max-width: $mobileWidth)
+                font-size: 15px
+                line-height: 25px
 
         img
             position: absolute

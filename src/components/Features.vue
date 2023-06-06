@@ -85,12 +85,16 @@
     .features-wrapper 
         margin-top: 195px
 
+        @media screen and (max-width: $mobileWidth)
+            width: 100%
+            margin-top: 90px
+
         .features-info
             width: 730px
             margin: 0 auto
-            
-            p, h2 
-                text-align: center
+
+            @media screen and (max-width: $mobileWidth)
+                width: 100%
             
             p   
                 @include pFontRule
@@ -98,6 +102,15 @@
                 margin-top: $contentVerticalMargin
                 width: 532px
                 line-height: 20px
+
+                @media screen and (max-width: $mobileWidth)
+                    margin-top: $contentVerticalMargin/2
+
+            p, h2 
+                text-align: center
+
+                @media screen and (max-width: $mobileWidth)
+                    width: 92%
         
         .features-nav 
             position: relative
@@ -107,12 +120,39 @@
             width: 730px
             justify-content: space-between
 
+            @media screen and (max-width: $mobileWidth)
+                width: 92%
+                flex-direction: column
+
             &::after
                 position: absolute
                 top: 50px
                 content: ''
                 width: 100%
-                border-top: 1px solid $grayishBlue
+                border-top: 2px solid $linesGray
+
+                @media screen and (max-width: $mobileWidth)
+                    top: 165px
+                    width: 90%
+                    left: 5%
+
+            li
+                @media screen and (max-width: $mobileWidth)
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    position: relative
+
+                &::before
+                    position: absolute
+                    display: none
+                    top: -20px
+                    content: ''
+                    width: 90%
+                    border-top: 2px solid $linesGray
+
+                    @media screen and (max-width: $mobileWidth)
+                        display: block
 
             .active
                 position: relative
@@ -120,11 +160,16 @@
             .active:after
                 content: ''
                 position: absolute
-                top: 50px
+                top: 49px
                 left: -30px
                 width: calc(100% + 60px)
                 border-top: 4px solid $softRed
                 z-index: 2
+
+                @media screen and (max-width: $mobileWidth)
+                    top: 40px
+                    width: 60%
+                    left: 20%
 
             button
                 font-size: $mainFontSize
@@ -132,6 +177,9 @@
                 background-color: inherit
                 padding-bottom: 40px
                 box-sizing: border-box
+
+                @media screen and (max-width: $mobileWidth)
+                    font-weight: 400 !important
 
                 &:hover
                     color: $softRed
