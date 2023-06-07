@@ -32,7 +32,9 @@ import img3 from '../assets/images/illustration-features-tab-3.svg'
 
 <template>
     <section class="feature-wrapper">
-        <img :src="this.chooseImg(heading).src" alt="" class="feature-img" :style="{aspectRatio: this.chooseImg(heading).ratio}">
+        <div class="image-wrapper">
+            <img :src="chooseImg(heading).src" alt="" class="feature-img" :style="{aspectRatio: chooseImg(heading).ratio}">
+        </div>
         <div class="blue-box"></div>
         <article class="feature-main-info">
             <h2 class="feature-heading">{{heading}}</h2>
@@ -106,13 +108,21 @@ import img3 from '../assets/images/illustration-features-tab-3.svg'
                 border-top-right-radius: 140px
                 border-bottom-right-radius: 140px
 
-        .feature-img 
-            margin-top: 75px
-            width: 537px
+        .image-wrapper 
+            width: 535px
 
             @media screen and (max-width: $mobileWidth)
                 margin: 0 auto
-                margin-top: 45px
-                width: 275px
+                width: 80%
+
+            .feature-img 
+                margin-top: 75px
+                height: 345px
+
+                @media screen and (max-width: $mobileWidth)
+                    margin: 0 auto
+                    margin-top: 45px
+                    width: 275px
+                    height: auto
 
 </style>

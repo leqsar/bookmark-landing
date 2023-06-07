@@ -73,8 +73,8 @@
             </li>
         </ul>
         <Feature 
-            :heading="this.currentTabInfo.heading" 
-            :mainContent="this.currentTabInfo.mainContent" 
+            :heading="currentTabInfo.heading" 
+            :mainContent="currentTabInfo.mainContent" 
         />
     </section>
 </template>
@@ -157,6 +157,9 @@
             .active
                 position: relative
 
+                button
+                    color: $veryDarkBlue
+
             .active:after
                 content: ''
                 position: absolute
@@ -177,6 +180,7 @@
                 background-color: inherit
                 padding-bottom: 40px
                 box-sizing: border-box
+                color: $grayishBlue
 
                 @media screen and (max-width: $mobileWidth)
                     font-weight: 400 !important
